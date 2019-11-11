@@ -18,9 +18,28 @@ p{
 } */ 
 
 
-#nev{
-    background-color: cadetblue;
-    
+.sideNav{
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    background-color:cadetblue;
+    overflow-x:hidden;
+    padding-top:20px;
+
+}
+.sideNav a{
+    padding:6px 6px 6px 32px;
+    text-decoration: none;
+    font-size:25px;
+    color: #001b22c4;
+    display:block;
+}
+
+.sideNav a:hover{
+    color:#f1f1f1;
 }
 
 
@@ -30,12 +49,17 @@ main{
     /* margin:10px; */
     /* border: 10px; */
     /* position:center; */
+    margin-left:140px;
 }
+
 .shelf{
-    background-color:wheat;
+    background-color:rgb(155, 165, 179);
     padding: 10px;
     margin:30px;
     /* border:20px; */
+
+    /* 直角变圆角 */
+    border-radius:15px;
 }
 
 
