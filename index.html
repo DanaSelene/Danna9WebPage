@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!-- link to js -->
+    <script src="jsvascript.js">
+    </script>
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link to php--not yet implemented, since the enviornment is not ready for it -->
 </head>
+
 <body>
-    <p> hello, dana!</p>
+    <!-- testing the live server -->
+    <!-- <p> hello, dana!</p> -->
+    <h1>
+        This is going to be Danna's Book shelf
+    </h1>
+
+    <!-- need an navigation bar here -->
+    <div id="nev" id="mainFont">
+        <p>主页</p>
+        <!-- <p>男频</p> -->
+        <!-- <p>女频</p> -->
+        <a href="finishedBooks.html">看完</a>
+        <p>想看</p>
+        <p>log in</p>
+    </div>
+    <main>
+        <p class="mainFont">
+            this is going to be the main content
+        </p>
+
+        <!-- 建立行和列，由此来存放书籍 -->
+        <div class="shelfsOfBooks">
+            <h2>书籍状态/书籍规划区域</h2>
+            <div class="shelf">
+                <h3>在看的书</h3>
+                <ul>
+                    <li>全职法师</li>
+                </ul>
+            </div>
+
+            <div class="shelf">
+                <h3>想要看的书</h3>
+                <ul>
+                    <li>。。。</li>
+                    <li>大小姐</li>
+                    <li>修真</li>
+                    <li>权势</li>
+                    <li>。。</li>
+                    <li>。。。</li>
+                </ul>
+            </div>
+
+            <div class="shelf">
+                <h3>看完了的书</h3>
+                <ul>
+                    <li>天道图书馆</li>
+                </ul>
+            </div>
+            <div class="shelf">
+                <h3>看了一半的书</h3>
+                <ul>
+                    <li>百炼成神</li>
+                    <li>元尊</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <!--练习一下放视频 -->
+            <!-- <video width="400" controls>
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <p>
+                Video courtesy of
+                <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+            </p> -->
+
+            <iframe width=100% height="500" src="https://www.bilibili.com/video/av46741282/">
+            </iframe>
+        </div>
+
+
+    </main>
 </body>
+<div class="footer">
+    copyright is owned by Dawaname Dawaname
+    <!-- </footer> -->
+</div>
+
 </html>

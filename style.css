@@ -1,0 +1,53 @@
+h1{
+    background-color:lightsteelblue;
+}
+
+p{
+    color:gainsboro;
+}
+
+/* this part is followed by the stucture */
+
+.mainFont{
+    color:aqua;
+}
+
+/* 为什么nev里的字不能被改编颜色？ 但是main里的字却可以在一样的code下改变颜色？*/
+/* #mainFont{
+    color:aqua;
+} */ 
+
+
+#nev{
+    background-color: cadetblue;
+    
+}
+
+
+main{
+    background-color:slategray;
+    padding:10px;
+    /* margin:10px; */
+    /* border: 10px; */
+    /* position:center; */
+}
+.shelf{
+    background-color:wheat;
+    padding: 10px;
+    margin:30px;
+    /* border:20px; */
+}
+
+
+
+.footer{
+    background-color: lightslategray;
+    margin:2px; 
+    /* 上面这行：和上一段隔开 */
+    padding:3em;
+    /*上面这行： 把这一段的周围变大 */
+    /* bottom:0; */
+    /* position:fixed; */   
+    width:100%;
+    text-align: center;
+}
