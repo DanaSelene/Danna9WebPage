@@ -79,6 +79,32 @@ main{
 }
 
 
+/* 这是back to top的button */
+#myBtn{
+    /* display:none; */
+    position:fixed;
+    bottom:20px;/* 始终离页面最下方的20px 处*/
+    right:30px;
+    /*上边这行：这个让这个button在离页面的最右边30px的地方。 整个button变到了右边*/
+    z-index:99;
+    /*上面这行：这个让本来会被footer盖住的button变得在footer上面了，所以整个页面都看的到这个button*/
+    font-size:18px;/*这个让字体变大了*/
+    border:none;/*这个让这个button周围的黑色边框消失了*/
+    outline:none;/*这个让这个button点击了之后没有蓝色在上面*/
+    background-color:cadetblue;
+    /* rgba(127, 255, 212, 0.616); */
+    color:rgb(110, 103, 103);
+    cursor:pointer;/*这个??????*/
+    padding:8px;/*这个把button里字体周围的空间变大了，所以整个button会变大*/
+    border-radius:4px;/*这个让button变成圆角的*/
+}/*这个只会改变这个button的长相，他还不能把你传送回网页最上方*/
+
+#myBtn:hover{
+    background-color:rgba(55, 88, 100, 0.63);
+    /* rgb(131, 165, 157); */
+    color:whitesmoke;
+}
+
 
 /* .footer{ */
 footer{
