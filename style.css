@@ -97,5 +97,5 @@ footer{
        解决方式就是：把短的页面变长！ 哈哈哈哈哈哈把main变长了(在main区域里加上: min-height: 100vh;)
     */
     width:100%;
-    margin-left:140px;
+    text-align:center;
 }
