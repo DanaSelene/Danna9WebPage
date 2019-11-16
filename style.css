@@ -50,6 +50,10 @@ main{
     /* border: 10px; */
     /* position:center; */
     margin-left:140px;
+    width:100%; 
+    /* position: relative; */
+    min-height: 100vh;
+    /* 上面一行:把main 段变长了.成功解决footer问题 */
 }
 
 .shelf{
@@ -64,14 +68,22 @@ main{
 
 
 
-.footer{
+/* .footer{ */
+footer{
     background-color: lightslategray;
-    margin:2px; 
+    /* margin:2px;  */
     /* 上面这行：和上一段隔开 */
     padding:3em;
     /*上面这行： 把这一段的周围变大 */
+    /* left:0; */
     /* bottom:0; */
-    /* position:fixed; */   
+    /* position:fixed;    */
+    position:absolute;
+    /* 上面这行不能搭配 bottom:0; 因为如果搭配了，footer会整个跑到 整个页面的中间（也就是说会出现在第一个“最下”的位置） 
+       但是如果只有position的话，长的页面footer问题是解决了，但是短的页面的footer会出问题：footer会跑到最后一块的正下方而不
+        是他应该在的整个页面的“最下”的位置
+       解决方式就是：把短的页面变长！ 哈哈哈哈哈哈把main变长了(在main区域里加上: min-height: 100vh;)
+    */
     width:100%;
-    text-align: center;
+    margin-left:140px;
 }
