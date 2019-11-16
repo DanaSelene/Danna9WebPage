@@ -38,10 +38,20 @@ p{
     display:block;
 }
 
-.sideNav a:hover{
+/* .sideNav a:hover{
     color:#f1f1f1;
-}
+} */
 
+.sideNav a.active {
+    background-color: rgba(55, 88, 100, 0.63);
+    color: white;
+  }
+
+
+.sideNav a:hover:not(.active) {
+    background-color: rgb(76, 151, 116);
+    color: white;
+  }
 
 main{
     background-color:slategray;
@@ -53,7 +63,9 @@ main{
     width:100%; 
     /* position: relative; */
     min-height: 100vh;
-    /* 上面一行:把main 段变长了.成功解决footer问题 */
+    /* 上面一行:把短的页面的main 段变长了.成功解决footer问题。
+    长的页面长度不变，footer不变 */
+
 }
 
 .shelf{
