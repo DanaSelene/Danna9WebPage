@@ -140,12 +140,22 @@
                     src="//music.163.com/outchain/player?type=2&id=34125945&auto=1&height=66"></iframe>
             </div> -->
 
-
+            <br>
+            <br>
 
             <!-- 练习一下直接放视频-->
             <div class="iframe">
+                <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
+                <br><br>
+
+
                 <!-- <video width="720" height="640" autoplay> -->
-                <video width="720" height="640">
+                <video id="video1" width="720">
                     <source src="NFlying_roofTop.mp4" type="video/mp4">
                     <!-- <source src="movie.ogg" type="video/ogg"> -->
                     Your browser does not support the video tag.
@@ -153,6 +163,28 @@
             </div>
 
 
+            <script>
+                var myVideo = document.getElementById("video1");
+
+                function playPause() {
+                    if (myVideo.paused)
+                        myVideo.play();
+                    else
+                        myVideo.pause();
+                }
+
+                function makeBig() {
+                    myVideo.width = 1080;
+                }
+
+                function makeSmall() {
+                    myVideo.width = 620;
+                }
+
+                function makeNormal() {
+                    myVideo.width = 720;
+                } 
+            </script>
 
 
 
