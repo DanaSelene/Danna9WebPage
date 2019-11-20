@@ -18,7 +18,7 @@
     <!-- 试着添加tab照片 -->
     <!--这个是梅花的网址：https://icons8.com/icon/36887/sakura# -->
     <!-- 这个是青色鹿的网址：https://www.flaticon.com/free-icon/reindeer_284480  -->
-    <link rel="icon" href="icons8-sakura-48.png">
+    <link rel="icon" href="web-icon/icons8-sakura-48.png">
 
 </head>
 
@@ -31,6 +31,7 @@
         <a href="interestedBooks.html">想看</a>
         <a href="finishedBooks.html">看完</a>
         <a href="">登录</a>
+        <!-- <a href="lookingUp-Movie.html"> 银河补习班 </a> -->
 
 
     </div>
@@ -39,54 +40,78 @@
         <!-- testing the live server -->
         <!-- <p> hello, dana!</p> -->
         <h1>
-            This is going to be Danna's Book shelf
+            欢迎来到九窖
         </h1>
         <p class="mainFont">
-            this is going to be the main content
+            这里装满了各式各样的充满回忆的酒。
         </p>
         <div>
             <!-- 这是back to top 的button -->
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </div>
+        <!-- 建立行和列，用来存放电影 -->
+        <div class="movies">
+            <h3>电影区</h3>
 
-        <!-- 建立行和列，由此来存放书籍 -->
-        <div class="shelfsOfBooks">
-            <h2>书籍状态/书籍规划区域</h2>
-            <div class="shelf">
-                <h3>在看的书</h3>
-                <ul>
-                    <li>全职法师</li>
-                </ul>
+            <div class="row">
+                <span class="column">
+                    <img src="movie-cover/wonder Woman.jpg" width="200" hight="400">
+                    <p>神奇女侠</p>
+                </span>
+
+                <span class="column">
+                    <img src="movie-cover/nezha-magic child.jpg" width="200" hight="400">
+                    <p>哪吒之魔童降世</p>
+                </span>
+
+                <span class="column">
+                    <img src="movie-cover/son of the weather.jpg" width="200" hight="400">
+                    <p>天气之子</p>
+                </span>
+                <span class="column">
+                    <img src="movie-cover/LongMao.jpg" width="200" hight="400">
+                    <p>千与千寻</p>
+                </span>
             </div>
 
-            <div class="shelf">
-                <h3>想要看的书</h3>
-                <ul>
-                    <li>。。。</li>
-                    <li>大小姐</li>
-                    <li>修真</li>
-                    <li>权势</li>
-                    <li>。。</li>
-                    <li>。。。</li>
-                </ul>
+            <div class="row">
+                <span class="column">
+                    <img src="movie-cover/spider man-into the uniderse.jpeg" width="200" hight="400">
+                    <p>蜘蛛侠：平行宇宙</p>
+                </span>
+
+                <span class="column">
+                    <img src="movie-cover/MuLan.jpg" width="200" hight="400">
+                    <p>花木兰</p>
+                </span>
+
+                <span class="column">
+                    <a href="exit.html">
+                        <img src="movie-cover/climb for life.jpg" width="200" hight="400">
+                        <p>极限逃生</p>
+                    </a>
+
+                </span>
+                <span class="column">
+                    <img src="movie-cover/water shape.jpg" width="200" hight="400">
+                    <p>水形物语</p>
+                </span>
             </div>
 
-            <div class="shelf">
-                <h3>看完了的书</h3>
-                <ul>
-                    <li>天道图书馆</li>
-                </ul>
+            <div class="row">
+                <span class="column">
+                    <a href="lookingUp-Movie.html">
+                        <img src="movie-cover/looking up.jpg" width="200" hight="400">
+                        <p>银河补习班</p>
+                    </a>
+                </span>
             </div>
-            <div class="shelf">
-                <h3>看了一半的书</h3>
-                <ul>
-                    <li>百炼成神</li>
-                    <li>元尊</li>
-                </ul>
-            </div>
+
+
         </div>
         <div class="interestingFeatures">
             <!--练习一下放视频 -->
+            <p>有趣功能区</p>
             <iframe width=70% height="500" src="https://www.bilibili.com/video/av46741282/">
             </iframe>
 

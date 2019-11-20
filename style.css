@@ -1,41 +1,41 @@
-h1{
+/* h1{
     background-color:lightsteelblue;
-}
+} */
 
-p{
+/* p{
     color:gainsboro;
-}
+} */
 
 /* this part is followed by the stucture */
 
-.mainFont{
-    color:aqua;
+.mainFont {
+    color: aqua;
 }
 
 /* 为什么nev里的字不能被改编颜色？ 但是main里的字却可以在一样的code下改变颜色？*/
+
 /* #mainFont{
     color:aqua;
-} */ 
+} */
 
-
-.sideNav{
+.sideNav {
     height: 100%;
     width: 150px;
     position: fixed;
     z-index: 1;
-    top:0;
-    left:0;
-    background-color:cadetblue;
-    overflow-x:hidden;
-    padding-top:20px;
-
+    top: 0;
+    left: 0;
+    background-color: cadetblue;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
-.sideNav a{
-    padding:6px 6px 6px 32px;
+
+.sideNav a {
+    padding: 6px 6px 6px 32px;
     text-decoration: none;
-    font-size:25px;
+    font-size: 25px;
     color: #001b22c4;
-    display:block;
+    display: block;
 }
 
 /* .sideNav a:hover{
@@ -45,87 +45,148 @@ p{
 .sideNav a.active {
     background-color: rgba(55, 88, 100, 0.63);
     color: white;
-  }
-
+}
 
 .sideNav a:hover:not(.active) {
     background-color: rgb(76, 151, 116);
     color: white;
-  }
+}
 
-main{
-    background-color:slategray;
-    padding:10px;
+main {
+    height: 100%;
+    background-color: slategray;
+    padding: 10px;
     /* margin:10px; */
     /* border: 10px; */
     /* position:center; */
-    margin-left:140px;
-    width:100%; 
+    margin-left: 140px;
+    width: 100%;
     /* position: relative; */
     min-height: 100vh;
     /* 上面一行:把短的页面的main 段变长了.成功解决footer问题。
     长的页面长度不变，footer不变 */
-
 }
 
-.shelf{
-    background-color:rgb(155, 165, 179);
+.movies {
+    background-color: rgb(155, 165, 179);
+    padding: 30px;
+    /* 上面这行padding： 让这个区间里面（浅蓝色）字的周围变大 */
+    margin: 20px;
+    /* 上面这行margin：让这个区间（浅蓝色）的周围离main区域（灰蓝色）的左右上下有一定的距离 */
+    margin-right: 10em;
+    /* 上面这行margin-right:让这个区间（浅蓝色）的右边离灰蓝色的最右边有一定的距离。这个距离让我们可以不拉下面的纵向进度条也可以看到
+       这个区间里的所有内容 */
+    /*下面这行： 直角变圆角 */
+    border-radius: 15px;
+}
+
+.row {
+    background-color: rgba(84, 99, 84, 0.76);
+    color: whitesmoke;
+    display: table;
+    width: 100%;
+    /*上面那行： Optional */
+    table-layout: fixed;
+    /*上面那行： Optional */
+    border-spacing: 10px;
+    /*上面那行： Optional */
+}
+
+.column {
+    display: table-cell;
+    background-color: rgba(125, 138, 126, 0.452);
+    /*Optional*/
+    text-align:center;
+   
+}
+
+.column a{
+    
+    color:whitesmoke;
+    text-decoration:none;
+}
+
+.column p:hover:not(.active){
+    color: rgb(221, 180, 180);
+}
+
+img{
+    padding-top: 50px;
+    width:250px;
+    height:350px;
+}
+
+.shelf {
+    background-color: rgb(155, 165, 179);
     padding: 10px;
-    margin:30px;
+    margin: 30px;
     /* border:20px; */
-
     /* 直角变圆角 */
-    border-radius:15px;
+    border-radius: 15px;
 }
-
 
 /* 这是back to top的button */
-#myBtn{
-    /* display:none; */
-    position:fixed;
-    bottom:20px;/* 始终离页面最下方的20px 处*/
-    right:30px;
-    /*上边这行：这个让这个button在离页面的最右边30px的地方。 整个button变到了右边*/
-    z-index:99;
-    /*上面这行：这个让本来会被footer盖住的button变得在footer上面了，所以整个页面都看的到这个button*/
-    font-size:18px;/*这个让字体变大了*/
-    border:none;/*这个让这个button周围的黑色边框消失了*/
-    outline:none;/*这个让这个button点击了之后没有蓝色在上面*/
-    background-color:cadetblue;
-    /* rgba(127, 255, 212, 0.616); */
-    color:rgb(110, 103, 103);
-    cursor:pointer;/*这个??????*/
-    padding:8px;/*这个把button里字体周围的空间变大了，所以整个button会变大*/
-    border-radius:4px;/*这个让button变成圆角的*/
-}/*这个只会改变这个button的长相，他还不能把你传送回网页最上方*/
 
-#myBtn:hover{
-    background-color:rgba(55, 88, 100, 0.63);
-    /* rgb(131, 165, 157); */
-    color:whitesmoke;
+#myBtn {
+    /* display:none; */
+    position: fixed;
+    bottom: 20px;
+    /* 始终离页面最下方的20px 处*/
+    right: 30px;
+    /*上边这行：这个让这个button在离页面的最右边30px的地方。 整个button变到了右边*/
+    z-index: 99;
+    /*上面这行：这个让本来会被footer盖住的button变得在footer上面了，所以整个页面都看的到这个button*/
+    font-size: 18px;
+    /*这个让字体变大了*/
+    border: none;
+    /*这个让这个button周围的黑色边框消失了*/
+    outline: none;
+    /*这个让这个button点击了之后没有蓝色在上面*/
+    background-color: cadetblue;
+    /* rgba(127, 255, 212, 0.616); */
+    color: rgb(110, 103, 103);
+    cursor: pointer;
+    /*这个??????*/
+    padding: 8px;
+    /*这个把button里字体周围的空间变大了，所以整个button会变大*/
+    border-radius: 4px;
+    /*这个让button变成圆角的*/
 }
 
-.interestingFeatures{
-    text-align: center;
+/*这个只会改变这个button的长相，他还不能把你传送回网页最上方*/
 
+#myBtn:hover {
+    background-color: rgba(55, 88, 100, 0.63);
+    /* rgb(131, 165, 157); */
+    color: whitesmoke;
+}
+
+.interestingFeatures {
+    text-align: center;
+    /*让整个有趣的功能（比如哔哩哔哩视频插入）都居中*/
+    margin-right: 140px;
+    /* 上面这行，让过于靠右的有趣功能区真正居中。上面那个不是很成功应为整个main区都被向右移了140px */
+    background-color: rgba(119, 182, 119, 0.363);
 }
 
 /* .footer{ */
-footer{
+
+footer {
     background-color: lightslategray;
     /* margin:2px;  */
     /* 上面这行：和上一段隔开 */
-    padding:3em;
+    padding: 3em;
     /*上面这行： 把这一段的周围变大 */
     /* left:0; */
     /* bottom:0; */
     /* position:fixed;    */
-    position:absolute;
+    position: absolute;
     /* 上面这行不能搭配 bottom:0; 因为如果搭配了，footer会整个跑到 整个页面的中间（也就是说会出现在第一个“最下”的位置） 
        但是如果只有position的话，长的页面footer问题是解决了，但是短的页面的footer会出问题：footer会跑到最后一块的正下方而不
         是他应该在的整个页面的“最下”的位置
        解决方式就是：把短的页面变长！ 哈哈哈哈哈哈把main变长了(在main区域里加上: min-height: 100vh;)
     */
-    width:100%;
-    text-align:center;
+    margin-left: 45px;
+    width: 100%;
+    text-align: center;
 }
