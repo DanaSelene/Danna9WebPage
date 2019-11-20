@@ -67,6 +67,20 @@ main {
     长的页面长度不变，footer不变 */
 }
 
+
+.bannerSection {
+    background-color: rgb(155, 165, 179);
+    padding: 30px;
+    /* 上面这行padding： 让这个区间里面（浅蓝色）字的周围变大 */
+    margin: 20px;
+    /* 上面这行margin：让这个区间（浅蓝色）的周围离main区域（灰蓝色）的左右上下有一定的距离 */
+    margin-right: 10em;
+    /* 上面这行margin-right:让这个区间（浅蓝色）的右边离灰蓝色的最右边有一定的距离。这个距离让我们可以不拉下面的纵向进度条也可以看到
+       这个区间里的所有内容 */
+    /*下面这行： 直角变圆角 */
+    border-radius: 15px;
+}
+
 .movies {
     background-color: rgb(155, 165, 179);
     padding: 30px;
@@ -110,7 +124,7 @@ main {
     color: rgb(221, 180, 180);
 }
 
-img{
+.row img{
     padding-top: 50px;
     width:250px;
     height:350px;

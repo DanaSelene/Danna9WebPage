@@ -49,6 +49,17 @@
             <!-- 这是back to top 的button -->
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </div>
+
+        <!-- 建立行和列，用来存放banner -->
+        <div class="bannerSection">
+            <h3>Banner区</h3>
+
+
+
+        </div>
+        </div>
+
+
         <!-- 建立行和列，用来存放电影 -->
         <div class="movies">
             <h3>电影区</h3>
@@ -110,20 +121,37 @@
 
         </div>
         <div class="interestingFeatures">
-            <!--练习一下放视频 -->
+
             <p>有趣功能区</p>
-            <iframe width=70% height="500" src="https://www.bilibili.com/video/av46741282/">
-            </iframe>
+
+            <!--练习一下放视频 -->
+            <div class="iframe">
+                <!-- 这个让这个iframe没有了周围的边界（灰色） <iframe width=70% height="500" src="https://www.bilibili.com/video/av46741282/" style="border:none;" ></iframe> -->
+                <iframe width=70% height="500" src="https://www.bilibili.com/video/av46741282/"></iframe>
+                <!--original-->
+                <!-- 这个让iframe原本的边界（灰色）变成只有2px的红色 <iframe width=70% height="500" src="https://www.bilibili.com/video/av46741282/" style="border:2px solid red;" ></iframe> -->
+            </div>
+
 
             <!-- 练习一下放歌曲 -->
-            <!-- 
+
+            <!-- <div class="iframe">
                 <iframe frameborder="no" marginwidth="0" marginheight="0" width=330 height=86
-                src="//music.163.com/outchain/player?type=2&id=34125945&auto=1&height=66"></iframe>
+                    src="//music.163.com/outchain/player?type=2&id=34125945&auto=1&height=66"></iframe>
+            </div> -->
 
-             -->
 
 
-        </div>
+            <!-- 练习一下直接放视频-->
+            <div class="iframe">
+                <!-- <video width="720" height="640" autoplay> -->
+                <video width="720" height="640">
+                    <source src="NFlying_roofTop.mp4" type="video/mp4">
+                    <!-- <source src="movie.ogg" type="video/ogg"> -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
 
 
 
