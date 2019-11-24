@@ -1,22 +1,7 @@
-/* h1{
-    background-color:lightsteelblue;
-} */
-
-/* p{
-    color:gainsboro;
-} */
-
-/* this part is followed by the stucture */
 
 .mainFont {
-    color: aqua;
+    color: rgb(81, 216, 216);
 }
-
-/* 为什么nev里的字不能被改编颜色？ 但是main里的字却可以在一样的code下改变颜色？*/
-
-/* #mainFont{
-    color:aqua;
-} */
 
 .sideNav {
     height: 100%;
