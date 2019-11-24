@@ -60,11 +60,12 @@ main {
     /* border: 10px; */
     /* position:center; */
     margin-left: 140px;
-    width: 100%;
+    width: 90%;
     /* position: relative; */
     min-height: 100vh;
     /* 上面一行:把短的页面的main 段变长了.成功解决footer问题。
     长的页面长度不变，footer不变 */
+    /* top: 0; */
 }
 
 .movies {
@@ -73,9 +74,6 @@ main {
     /* 上面这行padding： 让这个区间里面（浅蓝色）字的周围变大 */
     margin: 20px;
     /* 上面这行margin：让这个区间（浅蓝色）的周围离main区域（灰蓝色）的左右上下有一定的距离 */
-    margin-right: 10em;
-    /* 上面这行margin-right:让这个区间（浅蓝色）的右边离灰蓝色的最右边有一定的距离。这个距离让我们可以不拉下面的纵向进度条也可以看到
-       这个区间里的所有内容 */
     /*下面这行： 直角变圆角 */
     border-radius: 15px;
 }
@@ -164,8 +162,6 @@ img{
 .interestingFeatures {
     text-align: center;
     /*让整个有趣的功能（比如哔哩哔哩视频插入）都居中*/
-    margin-right: 140px;
-    /* 上面这行，让过于靠右的有趣功能区真正居中。上面那个不是很成功应为整个main区都被向右移了140px */
     background-color: rgba(119, 182, 119, 0.363);
 }
 
@@ -187,6 +183,7 @@ footer {
        解决方式就是：把短的页面变长！ 哈哈哈哈哈哈把main变长了(在main区域里加上: min-height: 100vh;)
     */
     margin-left: 45px;
-    width: 100%;
+    width: 90%;
+    /* 改变了本来灰蓝色的地带的多余width,所以现在就不需要拉x轴的进度条 */
     text-align: center;
 }
